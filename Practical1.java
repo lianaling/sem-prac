@@ -1,4 +1,3 @@
-
 import java.awt.FlowLayout;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -8,7 +7,6 @@ import javax.swing.JTextField;
 import java.awt.event.*;
 
 public class Practical1 implements ItemListener {
-
 	// Define GUI var
 	FlowLayout layout = new FlowLayout();
 	JComboBox<String> fruitbox = new JComboBox<>();
@@ -83,7 +81,6 @@ public class Practical1 implements ItemListener {
 		// Update text field on index change
 		updateTextField(source, choice, fruitbox, listprice, totalprice, fruitprice);
 		updateTextField(source, choice, herobox, listscore, score, heroscore);
-
 	}
 
 	private void updateTextField(Object source, int choice, JComboBox<String> box, int[] list, int total, JTextField textfield){
@@ -94,5 +91,4 @@ public class Practical1 implements ItemListener {
 			textfield.setText(output);
 		}
 	}
-
 }
