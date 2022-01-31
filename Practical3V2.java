@@ -6,8 +6,7 @@ class Income_taxCalculation {
         double income;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your yearly gross income");
-        income = sc.nextDouble();
-        income = Math.floor(income);
+        income = Math.floor(sc.nextDouble());
 
         // Create taxation levels
         Taxation[] tax_levels = {

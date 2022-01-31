@@ -7,7 +7,7 @@ class Income_taxCalculation {
         double income_tax = 0.0, income, first, first_tax, sub_tax;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your yearly gross income");
-        income = sc.nextDouble();
+        income = Math.floor(sc.nextDouble());
 
         if (income <= 39999) {
             first = 0;
