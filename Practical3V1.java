@@ -34,6 +34,7 @@ class Income_taxCalculation {
         income_tax = calculate_tax(income, first, first_tax, sub_tax);
 
         System.out.printf("Total tax to pay is %.2f", income_tax);
+        sc.close();
 
     }
 
@@ -41,4 +42,4 @@ class Income_taxCalculation {
         double subtracted = (income - first);
         return first * first_tax +  subtracted / subsequent * subsequent * sub_tax;
     }
-}\
+}

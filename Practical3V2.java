@@ -24,6 +24,8 @@ class Income_taxCalculation {
             }
         }
 
+        sc.close();
+
     }
 }
 
